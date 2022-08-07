@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Card</title>
+</head>
+
+<body>
+    <!-- Занятие №4. Дата проведения 05.03.2022
+    номер из 16 цифр по 4шт
+    владелец -имя фамилия
+    дата окончания
+    Платежная система
+    банк -->
+    <form id="addCard">
+        <div class="row">
+            <label for="b">Bank</label> 
+            <select name="bank" id="b">
+                <option>Sberbank</option>
+                <option>VTB</option>
+                <option>Tinkoff</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="s">Pay system</label>
+            <select name="system" id="s">
+                <option>MIR</option>
+                <option>Visa</option>
+                <option>Mastercard</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="u">Card user</label>
+            <input type="text" name="user" id="u" maxlength="20">
+        </div>
+        <div class="row">
+            <label for="n">Card number</label>
+            <input type="text" name="number" id="n" maxlength="16">
+        </div>
+        <div class="row">
+            <label for="e">Expire</label>
+            <input type="month" name="expire" id="e">
+        </div>
+        <button tupe="submit">Add card</button>
+    </form>
+
+    <div class="card">
+        <div class="line logo"></div>
+        <div class="line number">
+            <span>0000</span>
+            <span>0000</span>
+            <span>0000</span>
+            <span>0000</span>
+        </div>
+        <div class="line">
+            <div class="user">A Pakhomov</div>
+            <div class="exp">03/24</div>
+            <div class="system">
+                <img src="/images/mir.svg" alt="Mir">
+            </div>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <th>Мпп</th>
+            <th>Bank</th>
+            <th>Pay system</th>
+            <th>Card user</th>
+            <th>Card number</th>
+            <th>Expire</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>Sberbank</td>
+                <td>MIR</td>
+                <td>Alexey Pakhomov</td>
+                <td>0000 1111 2222 3333</td>
+                <td>March 2024</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+    <script src="card.js"></script>
+</body>
+
+</html>
+
+<!-- 
+Занятие №5. Дата проведения 09.03.2022 -->
